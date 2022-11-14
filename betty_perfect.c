@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- *betty+perfect - a code that passes all on betty's checks
+ *betty_perfect - a code that passes all on betty's checks
  *@a: number to be multiplied
  *
  *Return: void
