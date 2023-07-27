@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "shell.h"
 
 /**
  *betty_perfect - a code that passes all on betty's checks
