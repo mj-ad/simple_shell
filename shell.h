@@ -15,5 +15,6 @@
 
 char *read_line(void);
 char **split_line(char *line);
+int exec(char **args);
 
 #endif /* SHELL_H */
