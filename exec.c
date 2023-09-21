@@ -9,7 +9,7 @@
 
 int exec(char **args)
 {
-	pid_t pid, cpid = fork();
+	pid_t cpid = fork();
 
 	if (cpid == 0)
 	{
@@ -27,7 +27,7 @@ int exec(char **args)
 	{
 		do
 		{
-			pid = waitpid(cpid, &status, WUNTRACED);
+			waitpid(cpid, &status, WUNTRACED);
 		} while (!WIFEXITED(status) && !WIFSIGNALED(status));
 	}
 }

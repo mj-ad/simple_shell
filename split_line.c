@@ -13,7 +13,7 @@ char **split_line(char *line)
 	char *delim = ' ';
 	size_t word = 0;
 	size_t size = strlen(line);
-	int i = 0, j = 0;
+	size_t i = 0, j = 0;
 	char prev = '\0';
 
 	if (strtok(line, delim) != NULL)

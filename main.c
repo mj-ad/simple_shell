@@ -5,10 +5,10 @@
  * @ac: counter
  * @av: arguments
  *
- * Return: always 1 except in cases of an error
+ * Return: always 0
  */
 
-void main(void)
+int main(void)
 {
 	char *line;
 	char **args;
@@ -24,4 +24,5 @@ void main(void)
 		free(line);
 		free(args);
 	} while (stats);
+	return (0);
 }
