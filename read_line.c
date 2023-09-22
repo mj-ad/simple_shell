@@ -10,7 +10,6 @@ char *read_line(void)
 {
 	char *line = NULL;
 	ssize_t buf = 0;
-	ssize_t read;
 
 	if (get_line(&line, &buf, stdin) == -1)
 	{
