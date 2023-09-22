@@ -8,6 +8,7 @@
 #include <stdbool.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <sys/wait.h>
 #include <limits.h>
 #include <fcntl.h>
 #include <errno.h>
@@ -15,5 +16,6 @@
 char *read_line(void);
 char **split_line(char *line);
 int exec(char **args);
+ssize_t get_line(char **line, size_t *n, FILE *stream);
 
 #endif /* SHELL_H */

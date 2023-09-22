@@ -9,13 +9,14 @@
 
 int exec(char **args)
 {
+	int status;
 	pid_t cpid = fork();
 
 	if (cpid == 0)
 	{
 		if (execvp(args[0], args) == 1)
 		{
-			perror("Error in child process");
+			perror("Execvp error");
 		}
 		exit(EXIT_FAILURE);
 	}
